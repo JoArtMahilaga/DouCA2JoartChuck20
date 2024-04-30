@@ -53,7 +53,7 @@ public class HashMap {
         int index = hash(key);
         LinkedList<Patient> list = table[index];
 
-        // Check for duplicates
+        // This checks for duplicates
         for (Patient p : list) {
             if (p.equals(key)) {
                 list.remove(p);
