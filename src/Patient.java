@@ -54,4 +54,29 @@ public class Patient {
     public void setDateJoined(LocalDate dateJoined) {
         this.dateJoined = dateJoined;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Patient patient = (Patient) o;
+        return Objects.equals(getFirstName(), patient.getFirstName()) &&
+                Objects.equals(getSecondName(), patient.getSecondName()) &&
+                Objects.equals(getDateOfBirth(), patient.getDateOfBirth());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getFirstName(), getSecondName(), getDateOfBirth());
+    }
+
+    @Override
+    public String toString() {
+        return "Patient{" +
+                "firstName='" + firstName + '\'' +
+                ", secondName='" + secondName + '\'' +
+                ", dateOfBirth=" + dateOfBirth +
+                ", dateJoined=" + dateJoined +
+                '}';
+    }
 }
