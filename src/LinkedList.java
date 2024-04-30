@@ -35,4 +35,21 @@ public class LinkedList {
         return size;
     }
 
+    /**
+     *adds an appointment to the end of the linkedlist.
+     */
+    public void addLast(Appointment data) {
+        Node newNode = new Node(data);
+        if (isEmpty()) {
+            head = newNode;
+        } else {
+            Node current = head;
+            while (current.next != null) {
+                current = current.next;
+            }
+            current.next = newNode;
+        }
+        size++;
+    }
+
 }
