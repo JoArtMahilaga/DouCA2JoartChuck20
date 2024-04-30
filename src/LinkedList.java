@@ -80,4 +80,15 @@ public class LinkedList {
         return true;
     }
 
+    /**
+     *prints the list of appointments to standard output.
+     */
+    public void printList() {
+        Node current = head;
+        while (current != null) {
+            System.out.println(current.data);
+            current = current.next;
+        }
+    }
+
 }
