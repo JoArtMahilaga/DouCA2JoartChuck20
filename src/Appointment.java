@@ -1,9 +1,9 @@
 import java.time.LocalDate;
 
-public class Main {
-    public static void main(String[] args) {
 
-        public class Appointment implements Comparable<Appointment> {
+
+
+    public class Appointment implements Comparable<Appointment> {
             private String firstName;
             private String lastName;
             private LocalDate dob;
@@ -27,6 +27,12 @@ public class Main {
             }
 
 
+            @Override
+            public int compareTo(Appointment other) {
+                if (this.triageLevel != other.triageLevel) {
+                    return this.triageLevel - other.triageLevel;
+                } else {
+                    return this.date.compareTo(other.date);
+                }
+            }
         }
-    }
-}
