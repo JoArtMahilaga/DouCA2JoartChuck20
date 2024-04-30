@@ -4,6 +4,11 @@ import java.util.Random;
 
 import java.util.ArrayList;
 
+
+/**
+ *This app A console application to manage doctor queues and patient data, including saving and loading from a file.
+ */
+
 public class App {
     private static ArrayList<DoctorQueue> doctorQueues = new ArrayList<>();
     private static ArrayList<Patient> patients = new ArrayList<>();
@@ -18,6 +23,11 @@ public class App {
         scanner.close();
     }
 
+
+    /**
+     *This is the main entry point of the application which initializes system and manages workflow from startup to exit.
+     *
+     */
     private static void saveDataToFile() {
         try (ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("data.bin"))) {
             out.writeObject(patients);
@@ -27,6 +37,9 @@ public class App {
         }
     }
 
+    /**
+     *This method loads patients and doctor queues from a binary file if it exists.
+     */
     private static void loadDataFromFile() {
         File dataFile = new File("data.bin");
         if (dataFile.exists()) {
@@ -39,7 +52,9 @@ public class App {
         }
     }
 
-
+    /**
+     *This sets up the doctor queues based on user input, including queue capacities and the number of doctors.
+     */
     private static void setupDoctorsAndQueues() {
         System.out.println("Enter the upper bound for the queues:");
         int capacity = Integer.parseInt(scanner.nextLine());
