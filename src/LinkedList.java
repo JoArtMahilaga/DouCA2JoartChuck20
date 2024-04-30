@@ -52,4 +52,32 @@ public class LinkedList {
         size++;
     }
 
+    /**
+     *removes a specific appointment from the linkedlist.
+     */
+    public boolean remove(Appointment data) {
+        if (isEmpty()) return false;
+
+        Node current = head;
+        Node previous = null;
+
+        while (current != null && !current.data.equals(data)) {
+            previous = current;
+            current = current.next;
+        }
+
+        if (current == null) {
+            return false; // Appointment not found
+        }
+
+        if (previous == null) {
+            head = head.next; // Remove head if it's the item to be removed
+        } else {
+            previous.next = current.next; // Remove current node
+        }
+
+        size--;
+        return true;
+    }
+
 }
