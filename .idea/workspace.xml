@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e39ede1-2330-4edb-a19f-fdcb3234ffbd" name="Changes" comment="patient done &#10;overrides added">
+    <list default="true" id="0e39ede1-2330-4edb-a19f-fdcb3234ffbd" name="Changes" comment="made small mistake &#10;added another override">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Appointment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Appointment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Appointment.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +55,9 @@
       <option name="presentableId" value="Default" />
       <updated>1714310305269</updated>
       <workItem from="1714310306102" duration="1349000" />
-      <workItem from="1714480508806" duration="503000" />
+      <workItem from="1714480508806" duration="2193000" />
+      <workItem from="1714482837586" duration="6000" />
+      <workItem from="1714507287451" duration="1319000" />
     </task>
     <task id="LOCAL-00001" summary="starting point for our CA2 project thats possibly 20%">
       <option name="closed" value="true" />
@@ -89,7 +91,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714480901341</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="made small mistake &#10;added another override">
+      <option name="closed" value="true" />
+      <created>1714481037652</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1714481037652</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -98,6 +108,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="starting point for our CA2 project thats possibly 20%" />
     <MESSAGE value="patient done &#10;overrides added" />
-    <option name="LAST_COMMIT_MESSAGE" value="patient done &#10;overrides added" />
+    <MESSAGE value="made small mistake &#10;added another override" />
+    <option name="LAST_COMMIT_MESSAGE" value="made small mistake &#10;added another override" />
   </component>
 </project>
